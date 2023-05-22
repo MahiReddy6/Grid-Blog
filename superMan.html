@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>super man</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        font-family: "Roboto", sans-serif;
+      }
+
+      .container {
+        display: flex;
+        background-image: url("images/supermanFly.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 58%;
+        position: relative;
+        box-shadow: inset 0 22rem rgba(10, 10, 44, 0.9);
+        z-index: 1;
+      }
+
+      img {
+        width: 22%;
+      }
+
+      .heading-content {
+        margin: 5% 0 0 8%;
+        color: white;
+      }
+
+      p {
+        width: 98%;
+      }
+
+      .heigh-font {
+        font-size: 150%;
+        font-weight: bold;
+      }
+
+      .low-font {
+        margin-top: 1.25rem;
+        font-size: 136%;
+      }
+
+      #btn {
+        margin-top: 2rem;
+        background: rgb(235, 56, 59);
+        color: white;
+        width: 31%;
+        height: 15%;
+        border: none;
+        font-size: 100%;
+        font-weight: bold;
+      }
+
+      @media screen and (max-width: 1128px) {
+        .heigh-font {
+          font-size: 100%;
+          font-weight: bold;
+        }
+
+        .low-font {
+          margin-top: 1.25rem;
+          font-size: 86%;
+        }
+      }
+
+      @media screen and (max-width: 832px) {
+        #btn {
+          margin-top: 0.5rem;
+          width: 40%;
+        }
+
+        .low-font {
+          margin-top: 0.5rem;
+        }
+      }
+
+      @media screen and (max-width: 563px) {
+        #btn {
+          margin-top: 0.1rem;
+          width: 60%;
+        }
+
+        .low-font {
+          margin-top: 0.1rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <img src="/images/superman-stand.png" alt="superman-stand" />
+
+      <div class="heading-content">
+        <p class="heigh-font">The SuperMan</p>
+        <p class="low-font">
+          An alien orphan is sent from his dying planet to Earth, where he grows
+          up to become his adoptive homes first and greatest superhero.
+        </p>
+        <button id="btn">Add to Cart</button>
+      </div>
+    </div>
+  </body>
+</html>

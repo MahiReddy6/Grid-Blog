@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Blog</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .container {
+            width: 64%;
+            min-height: 100vh;
+            background-color: rgb(240, 238, 240);
+        }
+
+        .header {
+            padding: 5%;
+            background-color: rgb(24, 22, 24);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            height: 15%;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+
+        ul>li {
+            display: inline-block;
+            margin: 0 1rem;
+        }
+
+        ul>li a {
+            color: white;
+        }
+
+        .home {
+            height: 6.25rem;
+            background: rgb(222, 221, 222);
+            text-align: center;
+            padding: 2rem 0;
+            font-weight: bold;
+        }
+
+        #homeHeding {
+            font-size: 1.5rem;
+
+        }
+
+        .footer {
+            height: 6.5rem;
+            padding: 2.5rem;
+            background: rgb(24, 22, 24);
+            text-align: center;
+        }
+
+        .footerMenu>li {
+            text-decoration: none;
+            font-size: 0.8rem;
+        }
+
+        .blogcontent {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 25% 25% 25%;
+            column-gap: 9.3%;
+            margin: 0 2%;
+        }
+
+        .item {
+            width: 126%;
+            margin: 10% 0;
+        }
+
+        img {
+            display: inline-block;
+            width: 100%;
+        }
+
+        .Pheading {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 0.5rem 0;
+        }
+
+        .contact {
+            background: rgb(222, 221, 222);
+        }
+
+        .contact form,
+        .formele {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .formele {
+            align-items: start;
+            margin: 1rem 0;
+        }
+
+        #sendbtn {
+            border: none;
+            width: 3rem;
+            height: 2rem;
+            box-shadow: 0.1rem 0.1rem 0.3rem;
+        }
+
+        @media screen and (max-width: 625px) {
+            .header {
+                padding: 5%;
+                background-color: rgb(24, 22, 24);
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                height: 20%;
+            }
+        }
+
+        @media screen and (max-width: 441px) {
+            .footerMenu>li {
+                display: block;
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        @media screen and (max-width: 391px) {
+            .headderMenu li {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <nav>
+                <a href="#">Flexbox Blog</a>
+
+            </nav>
+            <div class="menu">
+                <ul class="headderMenu">
+                    <li><a href="#">Home</a> </li>
+                    <li><a href="#blogcon">Blog</a></li>
+                    <li><a href="#ContactDetails">Contact</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="home">
+            <p id="homeHeding">Flexblog Gems</p>
+            <p id="homeContent">Learn everything about Flexbox</p>
+        </div>
+        <main class="blogcontent" id="blogcon">
+            <div class="item">
+                <div class="image">
+                    <img src="/images/flexImage.jpeg" alt="image">
+                </div>
+                <div class="description">
+                    <div class="Pheading">First Post</div>
+                    <div class="pdescribe">This is an example Post</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image">
+                    <img src="/images/flexImage.jpeg" alt="image">
+                </div>
+                <div class="description">
+                    <div class="Pheading">Second Post</div>
+                    <div class="pdescribe">This is an example Post</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image">
+                    <img src="/images/flexImage.jpeg" alt="image">
+                </div>
+                <div class="description">
+                    <div class="Pheading">Third Post</div>
+                    <div class="pdescribe">This is an example Post</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image">
+                    <img src="/images/flexImage.jpeg" alt="image">
+                </div>
+                <div class="description">
+                    <div class="Pheading">Fourth Post</div>
+                    <div class="pdescribe">This is an example Post</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image">
+                    <img src="/images/flexImage.jpeg" alt="image">
+                </div>
+                <div class="description">
+                    <div class="Pheading">Fifth Post</div>
+                    <div class="pdescribe">This is an example Post</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image">
+                    <img src="/images/flexImage.jpeg" alt="image">
+                </div>
+                <div class="description">
+                    <div class="Pheading">Sixth Post</div>
+                    <div class="pdescribe">This is an example Post</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image">
+                    <img src="/images/flexImage.jpeg" alt="image">
+                </div>
+                <div class="description">
+                    <div class="Pheading">Seventh Post</div>
+                    <div class="pdescribe">This is an example Post</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image">
+                    <img src="/images/flexImage.jpeg" alt="image">
+                </div>
+                <div class="description">
+                    <div class="Pheading">Eighth Post</div>
+                    <div class="pdescribe">This is an example Post</div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="image">
+                    <img src="/images/flexImage.jpeg" alt="image">
+                </div>
+                <div class="description">
+                    <div class="Pheading">Ninth Post</div>
+                    <div class="pdescribe">This is an example Post</div>
+                </div>
+            </div>
+        </main>
+        <div class="contact" id="ContactDetails">
+            <form action="https://formsubmit.co/vlovelove88@gmail.com" method="POST">
+                <div class="formele" id="userName">
+                    <label for="Name">Name</label>
+                    <input type="text" name="name" id="Name">
+                </div>
+                <div class="formele" id="userMail">
+                    <label for="Email">Email</label>
+                    <input type="text" name="Email" id="Email">
+                </div>
+                <div class="formele" id="UserMsg">
+                    <label for="Message">Message</label>
+                    <textarea name="Message" id="Message" cols="21" rows="10"></textarea>
+                </div>
+                <div class="formele" id="btn">
+                    <button type="submit" id="sendbtn">Send</button>
+                </div>
+            </form>
+        </div>
+        <footer class="footer">
+            <ul class="footerMenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#blogcon">Blog</a></li>
+                <li><a href="#ContactDetails">Contact</a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+
+</html>
